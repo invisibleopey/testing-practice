@@ -18,5 +18,8 @@ const calculator = {
   subtract(x, y) {
     return Number(x) - Number(y);
   },
+  divide(x, y) {
+    return x / y;
+  },
 };
 export { capitalize, reverseString, calculator };
