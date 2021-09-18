@@ -2,6 +2,8 @@ const analyze = function analyze(array) {
   return {
     length: array.length,
     average: getAverage(array),
+    min: Math.min(...array),
+    max: Math.max(...array),
   };
 };
 
