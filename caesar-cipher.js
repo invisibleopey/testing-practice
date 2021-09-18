@@ -10,6 +10,11 @@ const caesarCipher = function caesarCipher(string, key) {
     }
     let currentIndex = alpahbets.indexOf(currentLetter);
     let newIndex = currentIndex + key;
+    // Takes care of upper case
+    if (string[i] === string[i].toUpperCase()) {
+      newString += alpahbets[newIndex].toUpperCase();
+      continue;
+    }
     newString += alpahbets[newIndex];
   }
   return newString;
