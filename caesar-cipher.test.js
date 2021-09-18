@@ -23,3 +23,11 @@ test('Punctuation', () => {
 test('More punctuation tests', () => {
   expect(caesarCipher('Abc!!!/?><Def', 1)).toBe('Bcd!!!/?><Efg');
 });
+
+test('Wrapping', () => {
+  expect(caesarCipher('YZ', 1)).toBe('ZA');
+});
+
+test('More Wrapping', () => {
+  expect(caesarCipher('XYZ', 5)).toBe('CDE');
+});
