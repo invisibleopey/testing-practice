@@ -1,4 +1,4 @@
-import { caesarCipher } from './caesar-cipher';
+import { caesarCipher } from '../scripts/caesar-cipher';
 
 test('5 letters with key 1', () => {
   expect(caesarCipher('abcde', 1)).toBe('bcdef');

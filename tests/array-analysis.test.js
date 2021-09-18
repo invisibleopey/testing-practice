@@ -1,4 +1,4 @@
-import { analyze } from './array-analysis';
+import { analyze } from '../scripts/array-analysis';
 
 test('Test value of length', () => {
   const object = analyze([1, 8, 3, 4, 2, 6]);

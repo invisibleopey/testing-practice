@@ -1,4 +1,4 @@
-import reverseString from './reverse-string';
+import reverseString from '../scripts/reverse-string';
 
 test('Reverse strings', () => {
   expect(reverseString('boy')).toBe('yob');
