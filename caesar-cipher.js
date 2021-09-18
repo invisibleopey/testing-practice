@@ -4,7 +4,8 @@ const caesarCipher = function caesarCipher(string, key) {
   let newString = '';
   for (let i = 0; i < lowerCaseString.length; i += 1) {
     let currentLetter = lowerCaseString[i];
-    if (currentLetter === ' ') {
+    // Takes care of all punctuation and numbers
+    if (!/[a-zA-Z]/.test(currentLetter)) {
       newString += currentLetter;
       continue;
     }

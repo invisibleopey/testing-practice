@@ -15,3 +15,11 @@ test('Two words with a space', () => {
 test('Two words with a space', () => {
   expect(caesarCipher('Abc DEF', 1)).toBe('Bcd EFG');
 });
+
+test('Punctuation', () => {
+  expect(caesarCipher('Abc.', 1)).toBe('Bcd.');
+});
+
+test('More punctuation tests', () => {
+  expect(caesarCipher('Abc!!!/?><Def', 1)).toBe('Bcd!!!/?><Efg');
+});
