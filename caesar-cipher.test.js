@@ -24,10 +24,18 @@ test('More punctuation tests', () => {
   expect(caesarCipher('Abc!!!/?><Def', 1)).toBe('Bcd!!!/?><Efg');
 });
 
-test('Wrapping', () => {
+test('Wrapping from the end', () => {
   expect(caesarCipher('YZ', 1)).toBe('ZA');
 });
 
-test('More Wrapping', () => {
+test('More Wrapping from the end', () => {
   expect(caesarCipher('XYZ', 5)).toBe('CDE');
+});
+
+test('5 letters with key -1', () => {
+  expect(caesarCipher('bcdef', -1)).toBe('abcde');
+});
+
+test('Two words with a space with -1 key', () => {
+  expect(caesarCipher('bcd efg', -1)).toBe('abc def');
 });
