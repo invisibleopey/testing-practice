@@ -21,3 +21,7 @@ test('Reverse strings', () => {
 test('Reverse strings', () => {
   expect(reverseString('girl')).toBe('lrig');
 });
+
+test('Reverse strings', () => {
+  expect(reverseString('Jah Bless')).toBe('sselB haJ');
+});
