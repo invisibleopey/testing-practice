@@ -30,3 +30,7 @@ test('Reverse strings', () => {
 test('Add two numbers', () => {
   expect(calculator.add(2, 2)).toBe(4);
 });
+
+test('Add two numbers', () => {
+  expect(calculator.add('2', 2)).toBe(4);
+});

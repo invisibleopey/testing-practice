@@ -13,7 +13,7 @@ const reverseString = function reverseString(string) {
 };
 const calculator = {
   add(x, y) {
-    return x + y;
+    return Number(x) + Number(y);
   },
 };
 export { capitalize, reverseString, calculator };
