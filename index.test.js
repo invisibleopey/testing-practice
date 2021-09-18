@@ -1,4 +1,4 @@
-import { capitalize, reverseString } from './index';
+import { capitalize, reverseString, calculator } from './index';
 
 // Capitalize(string)
 test('Capitalizes first letter of string', () => {
@@ -24,4 +24,9 @@ test('Reverse strings', () => {
 
 test('Reverse strings', () => {
   expect(reverseString('Jah Bless')).toBe('sselB haJ');
+});
+
+// Calculator Object
+test('Add two numbers', () => {
+  expect(calculator.add(2, 2)).toBe(4);
 });

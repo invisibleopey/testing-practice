@@ -11,4 +11,9 @@ const reverseString = function reverseString(string) {
   }
   return reversedArray.join('');
 };
-export { capitalize, reverseString };
+const calculator = {
+  add(x, y) {
+    return x + y;
+  },
+};
+export { capitalize, reverseString, calculator };
