@@ -39,3 +39,11 @@ test('5 letters with key -1', () => {
 test('Two words with a space with -1 key', () => {
   expect(caesarCipher('bcd efg', -1)).toBe('abc def');
 });
+
+test('Wrapping from the start', () => {
+  expect(caesarCipher('A', -1)).toBe('Z');
+});
+
+test('More Wrapping from the start', () => {
+  expect(caesarCipher('CDE', -5)).toBe('XYZ');
+});

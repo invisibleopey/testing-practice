@@ -14,6 +14,7 @@ const caesarCipher = function caesarCipher(string, key) {
 
     // Take Care of Wrapping
     if (newIndex > 25) newIndex = newIndex - 26;
+    if (newIndex < 0) newIndex = newIndex + 26;
     // Takes care of upper case
     if (string[i] === string[i].toUpperCase()) {
       newString += alpahbets[newIndex].toUpperCase();
