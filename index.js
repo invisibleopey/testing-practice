@@ -15,5 +15,8 @@ const calculator = {
   add(x, y) {
     return Number(x) + Number(y);
   },
+  subtract(x, y) {
+    return Number(x) - Number(y);
+  },
 };
 export { capitalize, reverseString, calculator };
