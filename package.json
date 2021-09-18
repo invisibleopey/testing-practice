@@ -1,0 +1,25 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "Part of the Odin Project. Practice writing some JavaScript tests using jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest -watch *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/invisibleopey/testing-practice.git"
+  },
+  "author": "Muritala Abdullahi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/invisibleopey/testing-practice/issues"
+  },
+  "homepage": "https://github.com/invisibleopey/testing-practice#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "install": "^0.13.0",
+    "jest": "^27.2.0"
+  }
+}
