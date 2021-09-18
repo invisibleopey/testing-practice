@@ -7,3 +7,7 @@ test('5 letters with key 1', () => {
 test('4 letters with key 1', () => {
   expect(caesarCipher('abcd', 1)).toBe('bcde');
 });
+
+test('Two words with a space', () => {
+  expect(caesarCipher('abc def', 1)).toBe('bcd efg');
+});
