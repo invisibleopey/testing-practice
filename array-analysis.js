@@ -1,5 +1,7 @@
 const analyze = function analyze(array) {
-  return {};
+  return {
+    length: array.length,
+  };
 };
 
 export { analyze };
